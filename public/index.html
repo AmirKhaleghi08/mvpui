@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+    <script type="text/javascript">
+        document.documentElement.classList.toggle('dark',
+        localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))
+    </script>
+</head>
+<body class=" flex items-center dark:bg-zinc-900 bg-violet-100/20">
+    <aside class="h-screen fixed w-[auto] bg-white dark:bg-gray-800 p-5 flex flex-col items-start justify-between">
+        <!-- searchbox -->
+         <div>
+            <form class="flex items-center overflow-hidden pl-2 pr-6 gap-2.5 justify-between text-xl/6 w-72 h-14 bg-violet-100 dark:bg-gray-700 rounded-2xl" action="">
+                <input class="w-full h-full outline-0 bg-violet-100 dark:bg-gray-700" type="search" placeholder="جست و جو..." name="" id="">
+                <button class="text-violet-600 dark:text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  </button>
+            </form>
+         </div>
+         <!-- content -->
+          <ul class="max-w-[505px]">
+            <li class="flex w-72 h-14 items-center justify-between">
+                <a class=" text-violet-600 dark:text-white font-Dana-medium flex items-center gap-3 text-xl/6" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                      </svg>  
+                    <h2>پرورش ایده</h2>      
+                </a>
+                <a class="text-violet-800 dark:text-white font-medium" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>                      
+                </a>      
+            </li>
+            <li class="flex w-72 h-14 items-center justify-between">
+                <a class=" text-violet-600 dark:text-white font-Dana-medium flex items-center gap-3 text-xl/6" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                      </svg>                      
+                    <h2>تیم سازی</h2>      
+                </a>
+                <a class="text-violet-800 dark:text-white font-medium" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>                      
+                </a>      
+            </li>
+            <li class="flex w-72 h-14 items-center justify-between">
+                <a class=" text-violet-600 dark:text-white font-Dana-medium flex items-center gap-3 text-xl/6" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                      </svg>
+                        
+                    <h2>بوم های کسب  و کار</h2>      
+                </a>
+                <a class="text-violet-800 dark:text-white font-medium" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>                      
+                </a>      
+            </li>
+            <li class="flex w-72 h-14 items-center justify-between">
+                <a class=" text-violet-600 dark:text-white font-Dana-medium flex items-center gap-3 text-xl/6" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                      </svg>
+                        
+                    <h2>حداقل محصول پذیرفتنی</h2>      
+                </a>
+                <a id="fundraise-btn" class="text-violet-800 dark:text-white font-medium" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>                      
+                </a>      
+            </li>
+            <li id="fundraise-content" class="hidden flex flex-col w-72 h-auto items-center justify-between">
+                <div class="w-full">
+                    <ul class="pr-10 w-full dark:text-white">
+                        <li class="flex h-10 gap-5 items-center">
+                            <div class="w-5 h-[3px] bg-violet-600 rounded-full"></div>
+                            <a href="">اصول طراحی اولیه</a>
+                        </li>
+                        <li class="flex h-10 gap-5 items-center">
+                            <div class="w-5 h-[3px] bg-violet-600 rounded-full"></div>
+                            <a href="">عرضه محصول اولیه</a>
+                        </li>
+                        <li class="flex h-10 gap-5 items-center">
+                            <div class="w-5 h-[3px] bg-violet-600 rounded-full"></div>
+                            <a href="">اصلاح و بهینه سازی محصول</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full h-[2px] bg-violet-400 my-2.5"></div>
+                <div class="w-full">
+                    <ul class="pr-10 w-full dark:text-white">
+                        <li>
+                            <a class="flex items-center gap-5 h-10" href="">
+                            <svg class="text-yellow-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                              </svg>
+                            <h3>ابزار های کاربردی</h3> 
+                            </a>
+                        </li>
+                           
+                        <li>
+                            <a class="flex items-center gap-5 h-10" href="">
+                                <svg class="text-green-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                  </svg>
+                                <h3>مطالعه های موردی</h3>                                  
+                            </a>
+                        </li>                   
+                    </ul>
+                </div>
+            </li>
+            <li class="flex w-72 h-14 items-center justify-between">
+                <a class=" text-violet-600 dark:text-white font-Dana-medium flex items-center gap-3 text-xl/6" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                      </svg>
+                      
+                    <h2>جذب سرمایه</h2>      
+                </a>
+                <a class="text-violet-800 dark:text-white font-medium" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>                      
+                </a>      
+            </li>
+          </ul>
+
+          <div>
+            <div id="them-changer" class="w-72 h-14 flex text-violet-700 dark:text-white font-medium items-center px-5 gap-2.5 text-xl/6 bg-violet-100 dark:bg-gray-700 rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                  </svg>                  
+                <span>تم تاریک</span>
+            </div>
+          </div>
+    </aside>
+    <main class=" mr-[328px] flex w-full h-screen flex-col p-5">
+        <header class=" fixed bg-violet-50 dark:bg-gray-800 w-full pl-[348px] pr-5 py-2.5 -mt-5 -mr-5 flex justify-between items-end">
+                <div class="flex justify-start items-center pb-1 border-b border-violet-800 dark:border-gray-500 gap-1 text-lg text-violet-400">
+                    <span class="dark:text-violet-300">حداقل محصول پذیرفتنی</span>
+                    <span class="text-black dark:text-gray-500">/</span>
+                    <span class="text-violet-800 dark:text-violet-400">اصلاح و بهینه سازی محصول</span>
+                </div>
+            
+                <form class="flex items-center overflow-hidden pl-2 pr-6 gap-2.5 justify-between text-xl/6 w-72 h-14 bg-violet-100 dark:bg-gray-700 rounded-2xl" action="">
+                    <input class="w-full h-full outline-0 bg-violet-100 dark:bg-gray-700" type="search" placeholder="جست و جو..." name="" id="">
+                    <button class="text-violet-600 dark:text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      </button>
+                </form>
+            
+        </header>
+        <article class="mr-28 pt-14 w-[900px] h-max dark:text-white">
+            <div class="">
+                <div class="w-full h-[400px] my-10 shadow-2xl flex items-center object-cover rounded-tl-[48px] overflow-hidden justify-center">
+                    <img class="w-[inherit] h-[inherit] object-cover" src="./images/mvp-02.min.png" alt="">
+                </div>
+                <h1 class=" text-4xl mb-2">اصلاح و بهینه سازی محصول</h1>
+                <h2 class="text-3xl">حداقل محصول پذیرفتنی چیست و چرا اهمیت دارد؟</h2>
+                <p class=" text-justify text-xl">
+                    اگر در فضای استارتاپی فعالیت می‌کنید، احتمالاً عبارت MVP (Minimum Viable Product) به گوشتان خورده است. MVP یعنی یک محصول حداقلی که فقط ویژگی‌های اصلی و ضروری برای ارائه به کاربران را دارد. حالا چرا اینقدر روی این موضوع تاکید می‌شود؟ چون MVP به شما کمک می‌کند سریع‌تر ایده‌هایتان را تست کنید، بازخورد واقعی بگیرید و از هدر رفتن منابع جلوگیری کنید.
+                </p>
+                <h2 class="text-3xl">مراحل توسعه</h2>
+                <p class="text-justify text-xl">
+                    1. ایده‌تان را مشخص کنید
+    
+    اولین قدم این است که ایده‌تان را شفاف کنید. چه مشکلی را می‌خواهید حل کنید؟ مخاطبان شما چه کسانی هستند؟ چرا باید به محصول شما اهمیت بدهند؟ این‌ها سوالاتی هستند که باید پاسخشان را بدانید. بهترین راه این است که از یک Lean Canvas یا ابزار مشابه استفاده کنید تا دید واضحی از ایده‌تان داشته باشید.
+    
+    2. تحقیق بازار
+    
+    شاید فکر کنید ایده‌تان بی‌نظیر است، اما همیشه بهتر است بازار را بررسی کنید. آیا محصول مشابهی وجود دارد؟ اگر بله، چه ضعف‌هایی دارند که شما می‌توانید بهتر کنید؟
+    
+    3. تعیین ویژگی‌های کلیدی
+    
+    حالا وقت آن است که ویژگی‌هایی که می‌خواهید در MVP بگنجانید را مشخص کنید. این ویژگی‌ها باید دقیقاً روی حل مشکل اصلی تمرکز کنند. به یاد داشته باشید: MVP نباید همه‌چیز باشد؛ فقط باید همان حداقل‌های لازم را داشته باشد.
+    
+    4. ساخت نسخه اولیه
+    
+    بعد از تعیین ویژگی‌ها، نسخه اولیه محصولتان را بسازید. اگر برنامه‌نویس هستید که عالی، ولی اگر نیستید می‌توانید از ابزارهای بدون کد (No-Code) مثل Webflow یا Bubble استفاده کنید. این ابزارها به شما کمک می‌کنند بدون نیاز به دانش کدنویسی، محصولتان را توسعه دهید.
+    
+    5. تست و بازخوردگیری
+    
+    محصولتان را به گروه کوچکی از کاربران (Early Adopters) ارائه دهید. بازخورد آن‌ها را جمع‌آوری کنید. این مرحله شاید یکی از مهم‌ترین مراحل باشد، چون شما واقعاً متوجه می‌شوید که آیا محصولتان ارزشی برای کاربران دارد یا خیر.
+    
+    6. اصلاح و بهبود
+    
+    براساس بازخوردهایی که گرفتید، محصولتان را اصلاح کنید. ممکن است نیاز باشد برخی ویژگی‌ها را حذف یا اضافه کنید. این فرآیند یک چرخه است: بازخورد بگیرید، اصلاح کنید، دوباره تست کنید.
+    
+    7. آماده‌سازی برای توسعه بیشتر
+    
+    وقتی مطمئن شدید که محصولتان نیاز بازار را برآورده می‌کند، وقت آن است که روی توسعه ویژگی‌های بیشتر و ارائه به مخاطبان گسترده‌تر کار کنید.
+                </p>
+            </article>
+        <div class="mr-28 py-14 w-[900px] flex justify-between">
+            <div class="w-[48%]  py-2.5 bg-violet-200 text-violet-800 rounded-2xl dark:bg-violet-700/90 dark:text-white flex items-center justify-center gap-10">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-lg" > بعدی</span>
+                        <h4 class="text-xl" >اصول طراحی اولیه</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[48%] py-2.5 bg-violet-200 text-violet-800 dark:bg-violet-700/90 dark:text-white rounded-2xl flex items-center justify-center gap-10">
+                <div class="flex items-center">
+                  
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-lg" > قبلی</span>
+                        <h4 class="text-xl" >عرضه محصول اولیه</h4>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                      </svg>
+                </div>
+            </div>
+        </div>
+        
+            
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
